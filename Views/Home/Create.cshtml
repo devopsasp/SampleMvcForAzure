@@ -1,0 +1,17 @@
+﻿@model  SampleMvcForAzure.MyItem
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+@using(Html.BeginForm())
+{
+    <div>Enter Item Name</div>
+@Html.TextBoxFor(@model => model.MyItemName);
+<div>Enter Price</div>
+@Html.TextBoxFor(@model => model.MyItemPrice);
+<button>
+    Submit
+</button>
+}

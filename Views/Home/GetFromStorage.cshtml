@@ -1,0 +1,11 @@
+﻿@model SampleMvcForAzure.Controllers.Item
+@{
+    ViewData["Title"] = "GetFromStorage";
+}
+
+<h1>GetFromStorage</h1>
+@foreach (var i in ViewBag.content)
+{
+    <h2>@i</h2>
+}
+
