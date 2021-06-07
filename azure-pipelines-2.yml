@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  name: Default
+  demands:
+  - agent.name -equals DESKTOP-1LRH8EH
 
 variables:
   solution: '**/*.sln'
