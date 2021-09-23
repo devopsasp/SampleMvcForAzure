@@ -9,6 +9,8 @@ using Microsoft.Extensions.Logging;
 
 namespace SampleMvcForAzure
 {
+
+//program for azure
     public class Program
     {
         public static void Main(string[] args)
@@ -16,6 +18,7 @@ namespace SampleMvcForAzure
             CreateHostBuilder(args).Build().Run();
         }
 
+//main function process
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
